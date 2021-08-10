@@ -1,8 +1,17 @@
-  {{title}}
+{{title}}
+<div>
+  <input
+    [(ngModel)]="userInfo.userName"
+    placeholder="username"
+  >
 
-<input [(ngModel)]="userInfo.userName" placeholder="username">
+  <input
+    [(ngModel)]="userInfo.userPwd"
+    placeholder="password"
+  >
 
-<input [(ngModel)]="userInfo.userPwd" placeholder="password">
+  <button (click)="onLogin()">Log in</button>
+  <button (click)="onRegister()">Register</button>
+</div>
 
-<button (click)="onLogin()" >Log in</button>
-<button (click)="onRegister()">Register</button>
+{{Res}}
